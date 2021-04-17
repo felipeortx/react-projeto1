@@ -21,11 +21,11 @@ function Expenses(props) {
       <ExpensesFilter selected={yearEntered} onYearFilter={YearFilterHandler} />
       {expenses.map((e, index) => (
         <ExpenseItem
-          key={index}
-          id={e.id}
-          date={e.date}
-          title={e.title}
-          amount={e.amount}
+            key={index}
+            id={e.id}
+            date={e.date}
+            title={e.title}
+            amount={e.amount}
         ></ExpenseItem>
       ))}
     </div>
